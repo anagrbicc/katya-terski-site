@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katya Terski — Makeup &amp; Hair Artist | Novi Sad</title>
+<meta name="description" content="Editorial makeup and hair artistry by Katya Terski — makeup, bridal, hair styling and editorial beauty in Novi Sad, Serbia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+<style>
+body{margin:0;background:#F7F5F0}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#171717}a:hover{color:#5B544D}
+::selection{background:#171717;color:#F7F5F0}
+.kt{font-family:'Manrope','Helvetica Neue',Arial,sans-serif;color:#171717;background:#F7F5F0;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.serif{font-family:'Cormorant Garamond','Times New Roman',Georgia,serif}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:500}
+.wrap{max-width:1360px;margin:0 auto;padding:0 56px}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:100;background:#171717;color:#F7F5F0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;animation:ldOut .9s cubic-bezier(.7,0,.2,1) 1.7s forwards;pointer-events:none}
+.loader .ln{width:160px;height:1px;background:rgba(247,245,240,.18);overflow:hidden}
+.loader .ln i{display:block;height:100%;background:#B9A99A;transform-origin:left;animation:ldBar 1.5s cubic-bezier(.6,0,.2,1) forwards}
+.loader .nm{font-size:28px;letter-spacing:.4em;font-weight:300;animation:fadeUp 1s ease .1s both}
+@keyframes ldBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes ldOut{to{transform:translateY(-100%);visibility:hidden}}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;height:84px;color:#F7F5F0;transition:background .45s cubic-bezier(.7,0,.2,1),color .45s,box-shadow .45s,height .45s}
+.nav.solid{background:#F7F5F0;color:#171717;box-shadow:0 1px 0 rgba(23,23,23,.08)}
+.nav .in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav .right{display:flex;align-items:center;gap:18px}
+.brand{font-family:'Cormorant Garamond',serif;font-size:21px;letter-spacing:.34em;font-weight:500;color:inherit;text-decoration:none;white-space:nowrap}
+.brand:hover{color:inherit}
+.links{display:flex;gap:40px;list-style:none;margin:0;padding:0}
+.links a{position:relative;color:inherit;text-decoration:none;font-size:12px;letter-spacing:.24em;text-transform:uppercase;padding:14px 0;display:inline-block}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .55s cubic-bezier(.7,0,.2,1)}
+.links a:hover::after,.links a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+
+/* language switcher */
+.lang{display:flex;align-items:center;color:inherit}
+.lang button{border:0;background:none;color:inherit;font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:.16em;cursor:pointer;padding:12px 4px;min-height:44px;opacity:.5;transition:opacity .4s;position:relative;display:inline-flex;align-items:center;gap:6px}
+.lang button:not(:first-child)::before{content:"/";opacity:.4;font-size:10px}
+.lang button span{position:relative;padding-bottom:3px}
+.lang button span::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:center;transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.lang button.on{opacity:1}
+.lang button.on span::after{transform:scaleX(1)}
+.lang button:hover{opacity:.85}
+.lang button:focus-visible{outline:1px solid currentColor;outline-offset:3px}
+
+.burger{display:none;width:48px;height:48px;border:0;background:none;color:inherit;cursor:pointer;padding:0;align-items:center;justify-content:center;flex-direction:column;gap:7px}
+.burger i{display:block;width:26px;height:2px;background:currentColor;border-radius:2px}
+.burger i:last-child{width:18px;align-self:flex-end;margin-right:11px}
+
+/* mobile menu */
+.menu{position:fixed;inset:0;z-index:60;background:#171717;color:#F7F5F0;display:flex;flex-direction:column;padding:28px 24px 40px;animation:menuIn .8s cubic-bezier(.7,0,.2,1) both}
+@keyframes menuIn{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.menu .top{display:flex;justify-content:space-between;align-items:center;height:28px}
+.menu nav{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.menu nav a{color:#F7F5F0;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,11vw,68px);line-height:1.1;display:flex;align-items:baseline;gap:18px;animation:fadeUp .7s cubic-bezier(.2,.7,.2,1) both;transition:opacity .45s ease,color .45s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+.menu nav a .mnum{font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:.2em;color:#B9A99A;transition:color .45s ease;flex:none}
+.menu nav a .mlabel{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:inherit;line-height:1}
+.menu nav a:nth-child(1){animation-delay:.3s}.menu nav a:nth-child(2){animation-delay:.36s}.menu nav a:nth-child(3){animation-delay:.42s}.menu nav a:nth-child(4){animation-delay:.48s}.menu nav a:nth-child(5){animation-delay:.54s}.menu nav a:nth-child(6){animation-delay:.6s}
+@media (hover:hover){.menu nav:hover a{opacity:.4}.menu nav:hover a:hover{opacity:1}.menu nav a:hover .mnum{color:#F7F5F0}}
+.menu nav a:focus-visible{opacity:1;outline:none}
+.menu nav a:active{transform:scale(.985);opacity:.8}
+.links a.nav-book{color:#B9A99A}
+.menu .mlang{display:flex;align-items:center;margin:28px 0 6px;animation:fadeUp .7s ease .6s both}
+.menu .mlang button{font-size:13px;letter-spacing:.2em;padding:14px 6px}
+.close{width:48px;height:48px;border:0;background:none;color:#F7F5F0;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+
+/* hero */
+.hero{position:relative;margin-top:-84px;background:#1c1917;color:#F7F5F0;min-height:860px;height:100vh;max-height:980px;overflow:hidden;display:flex;flex-direction:column}
+.hero .portrait{position:absolute;inset:0;width:100%;transform:none;background:#1c1917;border:0;overflow:hidden}
+.hero .portrait .ph{position:absolute;inset:0;animation:imgIn 1.5s cubic-bezier(.7,0,.2,1) .15s both}
+.hero .portrait .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block;filter:saturate(.97) contrast(1.02)}
+.hero .portrait .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(17,17,17,.76) 0%,rgba(17,17,17,.42) 14%,rgba(17,17,17,.14) 34%,rgba(17,17,17,.12) 56%,rgba(17,17,17,.8) 100%)}
+.hero .portrait .lbl{display:none}
+.cover{position:relative;flex:1;display:flex;align-items:center;justify-content:center;padding:100px 0 40px}
+.cover .inner{position:relative;width:100%;border:1px solid rgba(247,245,240,.26);display:flex;flex-direction:column;gap:clamp(22px,3.4vh,34px);padding:clamp(34px,5vh,58px) clamp(26px,4vw,54px)}
+.cover .ctop{display:flex;justify-content:space-between;align-items:baseline;gap:24px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#E7E0D4}
+.mast-cover{position:relative;z-index:2;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(50px,10.4vw,150px);line-height:.92;letter-spacing:.04em;margin:0;text-shadow:0 2px 40px rgba(17,17,17,.5);max-width:100%;overflow:hidden;padding-bottom:.08em}
+.mast-cover span{display:inline-block;animation:rise 1.3s cubic-bezier(.2,.75,.15,1) .35s both}
+.cover-mid{display:none;justify-content:flex-end;align-items:center;gap:24px;margin:clamp(6px,1.6vh,20px) 0}
+.col{display:flex;flex-direction:column;gap:20px;max-width:288px;animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) .7s both}
+.col.r{text-align:right;align-items:flex-end;animation-delay:.85s}
+.cl b{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(20px,2vw,28px);line-height:1.08;margin-bottom:7px;color:#fff;text-shadow:0 2px 18px rgba(17,17,17,.9),0 0 4px rgba(17,17,17,.75)}
+.cl span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;line-height:1.6;color:#EDE7DC;text-shadow:0 2px 16px rgba(17,17,17,.9),0 0 4px rgba(17,17,17,.75)}
+.cover-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.cover-bottom .tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1;margin:0;max-width:56%;color:#C7B8A6;text-shadow:0 1px 14px rgba(17,17,17,.5);animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 1s both}
+.cover-cta{display:flex;align-items:center;gap:14px 26px;flex-wrap:wrap;animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 1.1s both}
+.cta{display:inline-flex;align-items:center;gap:18px;color:#F7F5F0;text-decoration:none;font-size:12px;letter-spacing:.28em;text-transform:uppercase;padding:16px 0;border-bottom:1px solid rgba(247,245,240,.35);transition:border-color .4s}
+.cta:hover{color:#F7F5F0;border-color:#F7F5F0}
+.cta svg{transition:transform .5s cubic-bezier(.2,.7,.2,1);flex:none}
+.cta:hover svg{transform:translateX(10px)}
+.cta.dark{color:#171717;border-color:rgba(23,23,23,.35)}.cta.dark:hover{color:#171717;border-color:#171717}
+.hero-lead{font-family:'Manrope',sans-serif;color:#DDD6CC;font-size:clamp(15px,1.5vw,18px);line-height:1.6;font-weight:300;max-width:460px;margin:0 0 32px}
+.hero-actions{display:flex;align-items:center;gap:14px 30px;flex-wrap:wrap}
+.hbtn{display:inline-flex;align-items:center;gap:16px;background:transparent;color:#F7F5F0;text-decoration:none;padding:19px 38px;min-height:56px;font-family:'Manrope',sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;border:1px solid rgba(247,245,240,.62);transition:background .45s cubic-bezier(.7,0,.2,1),color .45s,border-color .45s}
+.hbtn span{color:inherit}
+.hbtn:hover,.hbtn:focus-visible{background:rgba(247,245,240,.8);color:#171717;border-color:rgba(247,245,240,.8)}
+.hbtn svg{transition:transform .5s cubic-bezier(.2,.7,.2,1);flex:none;color:inherit}
+.hbtn:hover svg{transform:translateX(8px)}
+.scroll{display:flex;flex-direction:column;align-items:center;gap:14px;color:#B9A99A;text-decoration:none}
+.scroll:hover{color:#F7F5F0}
+.scroll .eyebrow{writing-mode:vertical-rl;letter-spacing:.3em}
+.scroll .bar{width:1px;height:64px;background:rgba(247,245,240,.2);position:relative;overflow:hidden}
+.scroll .bar i{position:absolute;left:0;top:0;width:1px;height:40%;background:#F7F5F0;animation:drip 2.2s cubic-bezier(.6,0,.3,1) infinite}
+@keyframes drip{from{transform:translateY(-100%)}to{transform:translateY(260%)}}
+.enter1{animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 2.3s both}
+.enter2{animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 2.45s both}
+.enter3{animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 2.6s both}
+
+/* marquee */
+.marq{border-top:1px solid #DDD6CC;border-bottom:1px solid #DDD6CC;overflow:hidden;padding:22px 0;background:#F7F5F0}
+.marq .tr{display:flex;width:max-content;animation:marq 38s linear infinite}
+.marq .w{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:30px;white-space:nowrap}
+.marq .dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#B9A99A;margin:0 48px;flex:none;align-self:center}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* intro */
+.intro{padding:104px 0 96px}
+.intro .g{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.intro h2{grid-column:1 / span 11;margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(42px,6.2vw,100px);line-height:1;letter-spacing:-.01em}
+.intro h2 em{font-weight:300;color:#5B544D}
+.intro .side{grid-column:1 / span 3;margin-top:52px;display:flex;flex-direction:column;gap:14px}
+.intro .body{grid-column:6 / span 6;margin-top:52px}
+.intro .body p{font-size:18px;line-height:1.8;font-weight:300;margin:0 0 22px;color:#2A2725}
+.rule{height:1px;background:#171717;transform-origin:left}
+
+/* section heads */
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:52px}
+.shead h2{margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(52px,8.2vw,132px);line-height:.9;letter-spacing:-.015em}
+.shead h2 em{font-weight:300}
+.idx{display:flex;gap:14px;align-items:center;margin-bottom:22px;color:#5B544D}
+.idx b{font-weight:500;color:#171717}
+
+/* portfolio */
+.work{padding:100px 0 104px;background:#F7F5F0}
+.filters{display:flex;flex-wrap:wrap;gap:8px 30px}
+.flt{border:0;background:none;padding:12px 0;min-height:44px;font-family:'Manrope',sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#5B544D;cursor:pointer;position:relative}
+.flt::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:1px;background:#171717;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.flt:hover{color:#171717}
+.flt.on{color:#171717}.flt.on::after{transform:scaleX(1)}
+.flt sup{font-size:9px;margin-left:4px;letter-spacing:0}
+/* coverflow carousel */
+.cf-stage{position:relative;height:clamp(430px,52vw,600px);margin:8px auto 0;perspective:1700px;overflow:hidden;touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.cf-track{position:absolute;inset:0;transform-style:preserve-3d}
+.cf-card{position:absolute;top:50%;left:50%;width:clamp(272px,33vw,452px);height:clamp(372px,45vw,588px);margin:0;padding:0;border:0;background:none;cursor:pointer;transform-style:preserve-3d;transform:translate(-50%,-50%);transition:transform .85s cubic-bezier(.22,.72,.2,1),opacity .6s ease;will-change:transform,opacity;backface-visibility:hidden}
+.cf-card .cf-img{position:absolute;inset:0;overflow:hidden;background:#DDD6CC;border:1px solid rgba(23,23,23,.16);box-shadow:0 34px 70px -34px rgba(23,23,23,.55),0 2px 10px rgba(23,23,23,.08)}
+.cf-card .cf-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,23,23,0) 52%,rgba(23,23,23,.16));opacity:0;transition:opacity .6s}
+.cf-card .cf-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.3s cubic-bezier(.2,.7,.2,1)}
+.cf-card .cf-view{position:absolute;right:16px;bottom:16px;width:50px;height:50px;border-radius:50%;background:#F7F5F0;color:#171717;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.6);transition:opacity .5s,transform .5s cubic-bezier(.2,.7,.2,1)}
+.cf-card.c{transform:translate(-50%,-50%) translateZ(60px) scale(1);z-index:6;opacity:1;cursor:zoom-in}
+.cf-card.r1{transform:translate(-50%,-50%) translateX(54%) rotateY(-36deg) scale(.84);z-index:5;opacity:1}
+.cf-card.l1{transform:translate(-50%,-50%) translateX(-54%) rotateY(36deg) scale(.84);z-index:5;opacity:1}
+.cf-card.r2{transform:translate(-50%,-50%) translateX(100%) rotateY(-42deg) scale(.66);z-index:4;opacity:.92}
+.cf-card.l2{transform:translate(-50%,-50%) translateX(-100%) rotateY(42deg) scale(.66);z-index:4;opacity:.92}
+.cf-card.hid{transform:translate(-50%,-50%) translateX(135%) rotateY(-45deg) scale(.5);z-index:1;opacity:0;pointer-events:none}
+.cf-card.c:hover .cf-img img,.cf-card.c:focus-visible .cf-img img{transform:scale(1.04)}
+.cf-card.c:hover .cf-view,.cf-card.c:focus-visible .cf-view{opacity:1;transform:scale(1)}
+.cf-card.r1 .cf-img::after,.cf-card.l1 .cf-img::after,.cf-card.r2 .cf-img::after,.cf-card.l2 .cf-img::after{opacity:1}
+.cf-card:focus-visible{outline:none}
+.cf-card.c:focus-visible .cf-img{outline:1px solid #171717;outline-offset:6px}
+.cf-meta{text-align:center;margin-top:34px;min-height:64px}
+.cf-title{margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(28px,3.4vw,44px);line-height:1.08}
+.cf-cat{display:inline-block;margin-top:9px;font-size:11px;color:#5B544D}
+.cf-ctrls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:22px}
+.cf-arrow{width:54px;height:54px;border-radius:50%;border:1px solid rgba(23,23,23,.25);background:none;color:#171717;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;transition:background .35s,color .35s,transform .35s}
+.cf-arrow:hover{background:#171717;color:#F7F5F0}
+.cf-arrow:active{transform:scale(.94)}
+.cf-count{font-size:12px;letter-spacing:.18em;color:#5B544D;min-width:66px;text-align:center}
+.note{font-size:12px;color:#5B544D;letter-spacing:.04em;margin:8px 0 0}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(17,17,17,.97);color:#F7F5F0;display:flex;flex-direction:column;animation:lbIn .5s ease both}
+@keyframes lbIn{from{opacity:0}to{opacity:1}}
+.lb .bar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;gap:16px}
+.lb .stage{flex:1;display:flex;align-items:center;justify-content:center;gap:24px;padding:0 24px;min-height:0}
+.lb .pic{height:min(82vh,940px);max-width:calc(100vw - 180px);display:flex;align-items:center;justify-content:center;animation:lbPic .9s cubic-bezier(.2,.7,.2,1) both}
+.lb .pic img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
+@keyframes lbPic{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.lb .pic .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:120px;line-height:.8;opacity:.3}
+.lb .pic .ph{font-size:11px;letter-spacing:.2em;text-transform:uppercase;line-height:1.7;opacity:.85}
+.lb .info{display:flex;justify-content:space-between;align-items:baseline;padding:20px 24px 28px;gap:16px}
+.lb h3{margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px}
+.ib{width:52px;height:52px;border-radius:50%;border:1px solid rgba(247,245,240,.25);background:none;color:#F7F5F0;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;transition:background .3s,color .3s}
+.ib:hover{background:#F7F5F0;color:#171717}
+
+/* services */
+.svc{padding:100px 0 100px;background:#171717;color:#F7F5F0}
+.svc .shead h2{color:#F7F5F0}
+.svc .idx{color:#B9A99A}.svc .idx b{color:#F7F5F0}
+.srow{display:grid;grid-template-columns:70px minmax(0,1.1fr) minmax(0,1.2fr) auto 54px;gap:30px;align-items:center;padding:44px 0;border-top:1px solid rgba(247,245,240,.18);color:#F7F5F0;text-decoration:none;position:relative}
+.srow .price{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(19px,1.9vw,28px);white-space:nowrap;color:#B9A99A;text-align:right}
+.srow:last-child{border-bottom:1px solid rgba(247,245,240,.18)}
+.srow:hover{color:#F7F5F0}
+.srow::before{content:"";position:absolute;inset:0;background:#F7F5F0;transform:scaleY(0);transform-origin:bottom;transition:transform .7s cubic-bezier(.7,0,.2,1);z-index:0}
+.srow > *{position:relative;z-index:1;transition:color .5s}
+.srow:hover::before,.srow:focus-visible::before{transform:scaleY(1)}
+.srow:hover > *,.srow:focus-visible > *{color:#171717}
+.srow .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:#B9A99A}
+.srow h3{margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.2vw,60px);line-height:1;transition:transform .7s cubic-bezier(.2,.7,.2,1),color .5s}
+.srow:hover h3{transform:translateX(14px)}
+.srow p{margin:0;font-size:15px;line-height:1.75;font-weight:300;color:#CFC6BA}
+.srow .ar{width:56px;height:56px;border-radius:50%;border:1px solid rgba(247,245,240,.3);display:flex;align-items:center;justify-content:center;justify-self:end;transition:transform .6s cubic-bezier(.2,.7,.2,1),border-color .5s,color .5s}
+.srow:hover .ar{transform:rotate(-45deg);border-color:#171717}
+.svc .fine{margin-top:40px;font-size:12px;color:#B9A99A;letter-spacing:.06em}
+
+/* about — desktop: photo left, text right; mobile: heading, photo, bio stacked */
+.about{background:#F7F5F0;padding:104px 0 100px}
+.about-grid{display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.04fr);grid-template-areas:"pic head" "pic bio";column-gap:clamp(40px,5.5vw,84px);row-gap:24px;align-items:start}
+.about-pic{grid-area:pic;position:relative;width:100%;max-width:540px;aspect-ratio:4 / 5;overflow:hidden;background:#171717;align-self:center;margin:0}
+.about-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 24%;display:block}
+.about-head{grid-area:head;display:flex;flex-direction:column;align-items:flex-start;text-align:left;align-self:end}
+.about-head .idx{justify-content:flex-start;margin-bottom:16px}
+.about h2{margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(42px,4.8vw,82px);line-height:.98;letter-spacing:-.01em}
+.about h2 em{color:#5B544D}
+.about-intro{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(19px,2.1vw,27px);line-height:1.38;color:#5B544D;max-width:560px;margin:0}
+.about-bio{grid-area:bio;display:flex;flex-direction:column;align-items:flex-start;text-align:left;align-self:start}
+.about-bio p{font-size:16px;line-height:1.82;font-weight:300;margin:0 0 18px;color:#2A2725;max-width:560px}
+.about-bio .ig{margin-top:6px}
+.sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:36px;font-weight:300;margin-top:20px;color:#171717}
+
+/* on location */
+.loc{padding:100px 0;background:#171717;color:#F7F5F0}
+.loc .g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
+.loc .idx{color:#B9A99A}
+.loc .idx b{color:#F7F5F0}
+.loc h2{margin:0 0 28px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5.4vw,90px);line-height:.98;letter-spacing:-.01em}
+.loc h2 em{color:#B9A99A}
+.loc p{font-size:17px;line-height:1.8;font-weight:300;color:#CFC6BA;margin:0 0 20px;max-width:520px}
+.loc .cta{color:#F7F5F0;border-color:rgba(247,245,240,.35)}
+.loc .cta:hover{color:#F7F5F0;border-color:#F7F5F0}
+.loc .cap{font-size:12px;letter-spacing:.06em;color:#9A8B7C}
+.vwrap{position:relative;width:100%;max-width:400px;margin:0 auto;aspect-ratio:9/16;max-height:78vh;border:1px solid rgba(247,245,240,.14);background:#000;overflow:hidden}
+.vwrap video{width:100%;height:100%;object-fit:cover;display:block}
+
+/* contact */
+.contact{padding:104px 0 100px;background:#DDD6CC}
+.contact .g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px}
+.contact h2{margin:0 0 36px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(48px,5.6vw,92px);line-height:.98;letter-spacing:-.01em}
+.contact .lead{font-size:17px;line-height:1.8;font-weight:300;max-width:440px;margin:0 0 48px;color:#2A2725}
+.ig{display:inline-flex;align-items:center;gap:14px;color:#171717;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:12px 0;border-bottom:1px solid #171717;transition:gap .4s cubic-bezier(.2,.7,.2,1)}
+.ig:hover{color:#171717;gap:20px}
+.ig svg{flex:none}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
+.fld{display:flex;flex-direction:column;gap:10px;position:relative}
+.fld.full{grid-column:1 / -1}
+.fld label{font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:500}
+.fld input,.fld select,.fld textarea{font-family:'Manrope',sans-serif;font-size:17px;font-weight:300;color:#171717;background:transparent;border:0;border-bottom:1px solid #8C7F72;border-radius:0;padding:12px 0;min-height:48px;outline:none;transition:border-color .4s;width:100%;appearance:none;-webkit-appearance:none}
+.fld select{padding-right:28px;cursor:pointer}
+.chev{position:absolute;right:4px;bottom:21px;pointer-events:none}
+.fld textarea{resize:vertical;min-height:120px;line-height:1.6}
+.fld::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#171717;transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.7,0,.2,1);pointer-events:none}
+.fld:focus-within::after{transform:scaleX(1)}
+.fld input::placeholder,.fld textarea::placeholder{color:#6E655D}
+.fld.err input,.fld.err select,.fld.err textarea{border-bottom-color:#8A2C1F}
+.fld .msg{font-size:12px;color:#7A2418;letter-spacing:.02em;animation:fadeUp .4s ease both}
+.send{grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:18px;background:#171717;color:#F7F5F0;border:1px solid #171717;padding:22px 40px;min-height:56px;font-family:'Manrope',sans-serif;font-size:12px;letter-spacing:.28em;text-transform:uppercase;cursor:pointer;position:relative;overflow:hidden;transition:color .5s}
+.btn::before{content:"";position:absolute;inset:0;background:#F7F5F0;transform:translateY(101%);transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.btn > *{position:relative}
+.btn:hover{color:#171717}.btn:hover::before{transform:none}
+.btn svg{transition:transform .5s cubic-bezier(.2,.7,.2,1);flex:none}.btn:hover svg{transform:translateX(8px)}
+.btn.ghost{background:transparent;color:#171717}.btn.ghost::before{background:#171717}.btn.ghost:hover{color:#F7F5F0}
+.disc{font-size:12px;line-height:1.6;color:#4A443E;max-width:360px;margin:0}
+.done{border-top:1px solid #171717;padding-top:44px;animation:fadeUp .8s cubic-bezier(.2,.7,.2,1) both}
+.done h3{margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:56px;line-height:1}
+.done p{font-size:16px;line-height:1.8;font-weight:300;margin:0 0 20px;max-width:560px;color:#2A2725}
+.done .quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;line-height:1.5;color:#171717;margin-top:28px}
+.done .row{display:flex;gap:16px;flex-wrap:wrap;margin-top:36px}
+.done .btn{text-decoration:none}
+
+.clinks{display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin-top:38px}
+.clinks .cta,.clinks .ig{margin:0}
+
+/* contact map */
+.map{position:relative;display:block;margin-top:84px;border:1px solid #BFB4A5;overflow:hidden;text-decoration:none;color:#171717;aspect-ratio:12 / 4.5}
+.map .map-canvas{position:absolute;inset:0}
+.map .map-canvas svg{width:100%;height:100%;display:block}
+.map .pin{position:absolute;left:50%;top:48%;transform:translate(-50%,-100%);filter:drop-shadow(0 6px 10px rgba(17,17,17,.25));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.map:hover .pin,.map:focus-visible .pin{transform:translate(-50%,-116%)}
+.map:focus-visible{outline:2px solid #171717;outline-offset:3px}
+.map-card{position:absolute;left:26px;bottom:26px;background:#F7F5F0;border:1px solid #DDD6CC;padding:22px 26px;max-width:360px;display:flex;flex-direction:column;gap:6px}
+.map-card b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;line-height:1}
+.map-card .addr{font-size:14px;color:#2A2725;line-height:1.5}
+.map-card .map-go{display:inline-flex;align-items:center;gap:10px;margin-top:10px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#171717;transition:gap .4s cubic-bezier(.2,.7,.2,1)}
+.map:hover .map-go{gap:16px}
+.map-card .map-note{font-size:11px;color:#8C7F72;letter-spacing:.04em;margin-top:4px}
+@media (max-width:820px){.map{aspect-ratio:4 / 3.6;margin-top:64px}}
+@media (max-width:560px){.map{aspect-ratio:1 / 1.15;margin-top:52px}.map-card{left:14px;right:14px;bottom:14px;max-width:none;padding:18px 20px}.map-card b{font-size:22px}}
+
+/* fullscreen navigation menu — applies wherever the hamburger menu shows (≤1024px),
+   so a narrowed desktop window shows the same menu as mobile. Desktop inline nav (>1024px) untouched. */
+@media (max-width:1024px){
+.menu{padding:26px 20px 30px}
+.menu nav{flex:0 0 auto;gap:20px;justify-content:flex-start;margin-top:24px}
+.menu nav a{justify-content:center;align-items:baseline;gap:14px;text-align:center;padding:2px 0;line-height:1.05}
+.menu nav a .mlabel{font-size:38px}
+.menu nav a .mnum{font-size:12px}
+.menu .mlang{justify-content:center;margin-top:26px}
+}
+
+/* testimonials */
+.tst{background:#EDE7DC;padding:104px 0}
+.tst .shead{margin-bottom:40px}
+.tst .shead h2{color:#171717}
+.tst-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.2vw,28px);color:#5B544D;margin:12px 0 0}
+.tst-stage{position:relative;max-width:920px;margin:0 auto;text-align:center}
+.tquote{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:110px;line-height:.6;color:#C9BBA8;height:.56em;margin-bottom:10px}
+.tst-card{min-height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tst-stars{letter-spacing:.34em;color:#B9A99A;font-size:13px;margin-bottom:20px}
+.tst-text{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:clamp(23px,2.9vw,38px);line-height:1.32;color:#2A2725;margin:0 auto 26px;max-width:780px}
+.tst-name{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#171717}
+.tst-cat{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8C7F72;margin-top:7px}
+.tst-ctrls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:38px}
+.tarrow{width:52px;height:52px;border-radius:50%;border:1px solid rgba(23,23,23,.25);background:none;color:#171717;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;transition:background .35s,color .35s,transform .35s}
+.tarrow:hover{background:#171717;color:#F7F5F0}
+.tarrow:active{transform:scale(.94)}
+.tst-count{font-size:12px;letter-spacing:.18em;color:#5B544D;min-width:60px;text-align:center}
+.tst-note{text-align:center;font-size:11px;letter-spacing:.08em;color:#8C7F72;margin:38px 0 0}
+
+/* faq */
+.faq{background:#F7F5F0;padding:100px 0}
+.faq .shead{margin-bottom:38px}
+.faq-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.2vw,28px);color:#5B544D;margin:12px 0 0}
+.faq-list{max-width:900px;margin:0 auto;border-top:1px solid #DDD6CC}
+.faq-item{border-bottom:1px solid #DDD6CC}
+.faq-q{width:100%;background:none;border:0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:26px;padding:27px 0;text-align:left;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,2.5vw,30px);line-height:1.2;color:#171717;transition:color .4s}
+.faq-q:hover{color:#5B544D}
+.faq-q:focus-visible{outline:1px solid #171717;outline-offset:4px}
+.faq-ic{position:relative;width:18px;height:18px;flex:none}
+.faq-ic::before,.faq-ic::after{content:"";position:absolute;background:#171717;transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .4s}
+.faq-ic::before{left:0;top:50%;width:100%;height:1px;transform:translateY(-50%)}
+.faq-ic::after{top:0;left:50%;width:1px;height:100%;transform:translateX(-50%)}
+.faq-item.open .faq-ic::after{transform:translateX(-50%) scaleY(0);opacity:0}
+.faq-item.open .faq-q{color:#5B544D}
+.faq-a{overflow:hidden;animation:faqIn .5s cubic-bezier(.2,.7,.2,1) both}
+.faq-a p{margin:0 0 26px;font-size:16px;line-height:1.8;font-weight:300;color:#2A2725;max-width:720px}
+@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* cta band */
+.cta-band{background:#171717;color:#F7F5F0;padding:104px 0;text-align:center}
+.cta-band .in{max-width:920px;margin:0 auto}
+.cta-band h2{margin:0 auto;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(36px,5vw,74px);line-height:1.04;letter-spacing:-.01em;max-width:860px}
+.cta-band h2 em{color:#B9A99A}
+.cta-band p{font-size:clamp(15px,1.6vw,18px);line-height:1.7;font-weight:300;color:#CFC6BA;max-width:560px;margin:24px auto 36px}
+
+/* footer */
+.foot{background:#171717;color:#F7F5F0;padding:84px 0 40px}
+.foot .big{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(56px,11.6vw,176px);line-height:.85;letter-spacing:.01em;margin:0;white-space:nowrap}
+.foot .row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-top:48px;padding-top:32px;border-top:1px solid rgba(247,245,240,.18)}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;gap:8px 32px;flex-wrap:wrap}
+.foot a{color:#F7F5F0;text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase;display:inline-block;padding:12px 0}
+.foot a:hover{color:#B9A99A}
+.foot .ig{color:#F7F5F0;border-bottom-color:rgba(247,245,240,.55);padding:12px 0}
+.foot .ig:hover{color:#B9A99A;border-bottom-color:#B9A99A}
+.foot .ig svg{flex:none}
+.foot .small{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:40px;font-size:12px;color:#B9A99A;line-height:1.6}
+
+/* motion */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+@keyframes imgIn{from{clip-path:inset(100% 0 0 0);transform:scale(1.12)}to{clip-path:inset(0 0 0 0);transform:none}}
+@supports (animation-timeline: view()){
+.rv{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.rvi{animation:imgIn linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+.rvl{animation:ruleIn linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+.pxs{animation:pxS linear both;animation-timeline:view()}
+}
+@keyframes ruleIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes pxS{from{transform:translateY(60px)}to{transform:translateY(-60px)}}
+
+/* responsive */
+@media (max-width:1100px){
+.wrap{padding:0 40px}
+.links{gap:28px}
+.cf-card.r2{transform:translate(-50%,-50%) translateX(94%) rotateY(-40deg) scale(.62);opacity:.85}
+.cf-card.l2{transform:translate(-50%,-50%) translateX(-94%) rotateY(40deg) scale(.62);opacity:.85}
+.srow{grid-template-columns:54px minmax(0,1fr) auto;gap:12px 24px;align-items:baseline}
+.srow .n{grid-row:1;grid-column:1}
+.srow h3{grid-row:1;grid-column:2}
+.srow .price{grid-row:1;grid-column:3;align-self:baseline}
+.srow p{grid-row:2;grid-column:2 / 4}
+.srow .ar{display:none}
+.contact .g{grid-template-columns:minmax(0,1fr);gap:56px}
+.intro .body{grid-column:4 / span 9}
+}
+@media (max-width:1024px){
+.links{display:none}
+.burger{display:flex}
+.cover-mid{display:none}
+.cover{padding:96px 0 40px}
+.cf-card{width:clamp(280px,40vw,400px);height:clamp(380px,54vw,520px)}
+.cf-card.l2,.cf-card.r2{opacity:0;pointer-events:none}
+.cf-card.r1{transform:translate(-50%,-50%) translateX(50%) rotateY(-32deg) scale(.8);opacity:.96}
+.cf-card.l1{transform:translate(-50%,-50%) translateX(-50%) rotateY(32deg) scale(.8);opacity:.96}
+}
+@media (max-width:820px){
+.links{display:none}
+.burger{display:flex}
+.nav{height:72px}
+.nav .right{gap:6px}
+.hero{margin-top:-72px;min-height:620px;height:auto;max-height:none;padding:0}
+.hero .portrait .ph img{object-position:50% 18%}
+.hero .cover{padding:84px 22px 32px;align-items:center;justify-content:center}
+.cover .inner{width:100%;max-width:420px;margin:0 auto}
+.cover .inner{padding:30px 22px;gap:22px}
+.cover .ctop{font-size:10px;letter-spacing:.2em}
+.mast-cover{font-size:clamp(46px,15vw,112px)}
+.cover-mid{display:none}
+.cover-bottom{flex-direction:column;align-items:center;text-align:center;gap:22px}
+.cover-bottom .tagline{max-width:100%;font-size:clamp(30px,9vw,46px)}
+.cover-cta{width:100%;justify-content:center}
+.cover-cta{flex-direction:column;align-items:center;gap:14px}
+.cover-cta .hbtn{width:100%;max-width:300px;justify-content:center;background:rgba(23,23,23,.28);color:#F7F5F0;border-color:rgba(247,245,240,.75);text-shadow:0 1px 10px rgba(17,17,17,.7)}
+.cover-cta .hbtn:hover,.cover-cta .hbtn:focus-visible{background:rgba(247,245,240,.82);color:#171717;border-color:rgba(247,245,240,.82);text-shadow:none}
+.cover-cta .cta{color:#fff;border-color:rgba(247,245,240,.85);text-shadow:0 1px 10px rgba(17,17,17,.7)}
+.about{padding:64px 0}
+.about-grid{grid-template-columns:1fr;grid-template-areas:"head" "pic" "bio";column-gap:0;row-gap:0;align-items:start}
+.about-head,.about-bio{align-items:center;text-align:center;align-self:auto}
+.about-head .idx{justify-content:center}
+.about-head{margin-bottom:0}
+.about-bio p,.about-intro{max-width:620px}
+.about-pic{max-width:440px;margin:36px 0;justify-self:center;align-self:auto}
+.intro{padding:64px 0}
+.intro .side,.intro .body{grid-column:1 / -1;margin-top:36px}
+.intro h2{grid-column:1 / -1}
+.work,.svc,.contact,.loc,.tst,.faq,.cta-band{padding:64px 0}
+.tst-card{min-height:0}
+.tst-ctrls{margin-top:30px}
+.loc .g{grid-template-columns:minmax(0,1fr);gap:44px}
+.vwrap{max-width:330px}
+}
+@media (max-width:560px){
+.wrap{padding:0 20px}
+.brand{font-size:16px;letter-spacing:.24em}
+.cf-stage{height:clamp(400px,112vw,520px)}
+.cf-card{width:clamp(210px,66vw,300px);height:clamp(300px,94vw,420px)}
+.cf-card.c{transform:translate(-50%,-50%) translateZ(30px) scale(1)}
+.cf-card.r1{transform:translate(-50%,-50%) translateX(70%) rotateY(-26deg) scale(.82);opacity:.72}
+.cf-card.l1{transform:translate(-50%,-50%) translateX(-70%) rotateY(26deg) scale(.82);opacity:.72}
+.cf-meta{margin-top:26px}
+.cf-ctrls{margin-top:18px}
+.srow{grid-template-columns:1fr auto;gap:6px 14px;padding:32px 0}
+.srow .n{grid-column:1 / -1}
+.srow h3{grid-row:2;grid-column:1}
+.srow .price{grid-row:2;grid-column:2;align-self:baseline}
+.srow p{grid-row:3;grid-column:1 / -1}
+.srow .ar{display:none}
+.form{grid-template-columns:minmax(0,1fr)}
+.fld.half{grid-column:1 / -1}
+.lb .stage{padding:0 12px;gap:0}
+.lb .pic{max-width:calc(100vw - 24px);height:min(64vh,640px)}
+.lb .side{display:none}
+.lb .mnav{display:flex}
+.marq .w{font-size:22px}
+.marq .dot{margin:0 30px}
+.foot .big{white-space:normal}
+.shead{margin-bottom:44px}
+}
+@media (max-width:600px){
+.hero-actions{width:100%;gap:14px}
+.hero-actions .hbtn,.hero-actions .cta{width:100%;justify-content:center}
+.hero-lead{max-width:none}
+.mast{letter-spacing:0}
+.about-pic{max-width:360px;margin:34px 0}
+.lang button{padding:12px 4px;letter-spacing:.12em}
+.done h3{font-size:38px}
+.lb h3{font-size:26px}
+.lb .info{flex-direction:column;gap:6px;align-items:flex-start}
+}
+.lb .mnav{display:none;justify-content:center;gap:16px;padding-bottom:12px}
+
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none !important;transition:none !important}
+.loader{display:none}
+}
+</style>
+</head>
+<body>
+<div class="kt" id="app" lang="en"></div>
+<script>
+
+(function(){
+var DICT = {
+      en: {
+        code: 'en',
+        skip: 'Skip to content',
+        navHome: 'Home', navPortfolio: 'Portfolio', navServices: 'Services', navAbout: 'About', navContact: 'Contact',
+        navBook: 'Booking',
+        navLabel: 'Menu', langLabel: 'Choose language', openMenu: 'Open menu', closeMenu: 'Close menu',
+        location: 'Novi Sad, Serbia',
+        heroImgAria: 'Katya Terski — editorial beauty portrait',
+        heroImgA: 'Hero portrait', heroImgB: 'Replace with licensed photograph',
+        heroTag: 'Professional Makeup & Hair', artistry: 'Makeup & Hair Artistry',
+        heroLead: 'Professional makeup & hair artistry — for weddings, editorial and every occasion worth remembering.',
+        book: 'Book an appointment',
+        magEdition: 'Portfolio Edition · 2026',
+        cover1b: 'Makeup & Hair', cover1s: 'Artistry for camera & life',
+        cover2b: 'Bridal & Editorial', cover2s: 'Makeup · Hair · Beauty',
+        cover3s: 'Weddings & events',
+        explore: 'Explore my work', scroll: 'Scroll',
+        marquee: ['Makeup', 'Hair', 'Editorial', 'Bridal', 'Beauty'],
+        introA: 'Beauty is an art. ', introEm: 'Every detail', introB: ' tells a story.',
+        approach: 'The approach',
+        introBody1: 'Katya approaches every face as a canvas and every look as a quiet collaboration. Her work moves between luminous, second-skin makeup and bold editorial statements — guided always by light, texture and the individual beauty of the person in the chair.',
+        introBody2: 'Makeup and hair are conceived together, as one composition: nothing added without purpose, every detail considered.',
+        moreAbout: 'More about Katya',
+        idxPortfolio: 'Portfolio', workA: 'Selected ', workEm: 'Work',
+        filterLabel: 'Filter portfolio by category',
+        catAll: 'All', catMakeup: 'Makeup', catHair: 'Hair', catEditorial: 'Editorial', catBridal: 'Bridal',
+        orientPortrait: 'Portrait', orientLandscape: 'Landscape',
+        phImg: 'Portfolio image placeholder',
+        workNote: 'A selection of recent makeup and hair work.',
+        titles: ['Editorial Glow', 'Rosy Radiance', 'Golden Waves', 'Bridal Waves', 'Sculpted Glam', 'Sleek Chignon', 'Hollywood Waves', 'Luminous Nude'],
+        idxServices: 'Services', craftA: 'Price ', craftEm: 'List',
+        svcIntro: 'Each look is designed around the person, the occasion and the light. Select a service to begin an inquiry.',
+        optDefault: 'Select a service',
+        svc: [
+          { key: 'makeup_hair', title: 'Makeup & Hair', price: '9,000 RSD · €80', desc: 'Complete makeup and hair for your occasion, designed together as one considered look.' },
+          { key: 'makeup', title: 'Makeup', price: '4,500 RSD · €40', desc: 'Refined, camera-aware makeup tailored to your features and the light you will be seen in.' },
+          { key: 'hair', title: 'Hair', price: '4,500 RSD · €40', desc: 'Hair styled to complete the look and hold its shape through the day.' },
+          { key: 'location', title: 'On location', price: 'By arrangement', desc: 'Katya comes to you — Novi Sad, other cities and venues, by arrangement.' },
+          { key: 'bridal', title: 'Bridal attendance', price: '2,500 RSD · €20 / h', desc: 'Through the wedding day — refreshing and upkeep of makeup and hair, plus a look change during the day.' }
+        ],
+        bookSuffix: ' — start an inquiry',
+        svcFine: 'Prices shown in RSD and EUR. On-location travel is arranged per booking.',
+        idxAbout: 'About', aboutA: 'Behind the ', aboutEm: 'Artistry',
+        aboutIntro: 'Timeless beauty, created with precision and an eye for the smallest detail.',
+        aboutP1: 'Katya Terski is a professional makeup and hair artist based in Novi Sad, dedicated to creating timeless beauty through artistry, precision and an exceptional eye for detail.',
+        aboutP2: 'From effortlessly refined elegance to bold editorial expressions, every look is thoughtfully designed to enhance individuality and celebrate natural beauty.',
+        aboutP3: 'For Katya, makeup and hairstyling are more than services — they are an art form, where every detail contributes to a truly unforgettable impression.',
+        sig: '— Katya',
+        idxLocation: 'On location', locA: 'Beauty, wherever ', locEm: 'you are.',
+        locBody1: 'Katya travels to you. For weddings and events she comes on location — to your home, hotel or venue — so your preparation stays calm and unhurried, right where the day begins.',
+        locBody2: 'Travel in and around Novi Sad by arrangement; distance and timing are confirmed with each booking.',
+        locCap: 'Bridal preparation on location — Vinarija Zvonko Bogdan.',
+        locVideoAria: 'Video: bridal preparation on location at Vinarija Zvonko Bogdan',
+        aboutImgAria: 'Portrait of Katya Terski',
+        aboutImgA: 'Portrait of the artist', aboutImgB: 'Replace with licensed photograph · 4:5',
+        idxContact: 'Contact & Booking', contactA: "Let's Create Something ", contactEm: 'Beautiful.',
+        mapAria: 'Open Katya Terski studio location in Google Maps', studioLabel: 'The Studio',
+        studioAddr: 'Bulevar oslobođenja 00 · Novi Sad, Serbia', mapLink: 'View on Google Maps',
+        mapNote: 'Illustrative location · exact address shared on booking',
+        lead: 'Share a few details about your occasion or project and your preferred date. For the quickest reply, reach Katya directly on Instagram.',
+        lName: 'Name', lEmail: 'Email', lService: 'Type of service', lDate: 'Preferred date', lMessage: 'Message',
+        phName: 'Your full name', phMessage: 'Tell Katya about the occasion, the look you imagine, location and timing…',
+        disc: 'This concept form is not yet connected to an email service. Submitting checks your details and prepares a message for Instagram.',
+        send: 'Send inquiry',
+        vName: 'Please enter your name.', vEmail: 'Please enter your email address.', vEmailBad: 'Please enter a valid email address.', vService: 'Please choose a type of service.', vDate: 'Please choose a date in the future.', vMessage: 'Please share a few words about your occasion (at least 10 characters).',
+        sEyebrow: 'Inquiry prepared', sThankA: 'Thank you, ', sThankB: '.',
+        sP1a: 'Your details look complete. This concept site is not yet connected to an email service, so your message has ', sNot: 'not', sP1b: ' been sent.',
+        sP2: 'To reach Katya now, please send her a message on Instagram — your inquiry is ready to copy below.',
+        sInsta: 'Message on Instagram', sEdit: 'Edit inquiry',
+        sumHi: 'Hello Katya, I am ', sumMid: '. I would love to inquire about ', sumDate: ' on ', sumEnd: '. ', sumDash: ' — ', sumGeneric: 'your services',
+        artist: 'Makeup & Hair Artist',
+        copyright: '© 2026 Katya Terski. All rights reserved.',
+        conceptNote: 'Unofficial educational portfolio concept — not an official website and not endorsed by Katya Terski.',
+        tstIdx: 'Testimonials', tstA: 'Kind ', tstEm: 'Words',
+        tstSub: 'Beautiful moments, shared experiences.',
+        tstNote: 'Sample testimonials shown for layout — real client words will appear here.',
+        tst: [
+          { stars: '★★★★★', text: 'Katya has an extraordinary eye for detail. I felt completely myself — only more radiant — and everything lasted beautifully from the morning until the very last dance.', name: 'Bride', cat: 'Bridal' },
+          { stars: '★★★★★', text: 'Calm, precise and genuinely talented. Every look came together exactly as we imagined for the shoot, and the hair held perfectly under the lights.', name: 'Editorial client', cat: 'Editorial' },
+          { stars: '★★★★★', text: 'A wonderful experience from start to finish — natural, elegant makeup and hair that felt like the very best version of me.', name: 'Client', cat: 'Makeup & Hair' }
+        ],
+        faqIdx: 'FAQ', faqA: 'A Few Things You May ', faqEm: 'Wonder',
+        faqSub: 'Everything you need to know before your appointment.',
+        faq: [
+          { q: 'How far in advance should I book my appointment?', a: 'As early as you can — especially for weddings and busy seasons. Share your date and Katya will confirm availability for you.' },
+          { q: 'Do you offer makeup and hairstyling together?', a: 'Yes. Makeup and hair are designed together as one considered look, and can also be booked separately if you prefer.' },
+          { q: 'Do you travel to clients for weddings and special occasions?', a: 'Yes. For weddings and events Katya comes to you; travel in and around Novi Sad is arranged with each booking.' },
+          { q: 'How long does a makeup and hair appointment take?', a: 'It depends on the look and the occasion. The timing is confirmed when you book, so your schedule stays calm and unhurried.' },
+          { q: 'Can I book a bridal trial?', a: 'Yes — a trial is a lovely way to perfect your bridal look in advance. Mention it in your inquiry and Katya will arrange it with you.' },
+          { q: 'How should I prepare for my appointment?', a: 'Where possible, arrive with clean, moisturised skin and clean, dry hair. Katya will share any specific guidance once your booking is confirmed.' },
+          { q: 'How can I confirm my booking?', a: 'Send an inquiry through the contact form or message Katya on Instagram — she will reply to confirm all the details with you.' }
+        ],
+        ctaA: 'Your Moment. ', ctaEm: 'Beautifully Considered.',
+        ctaText: 'From intimate celebrations to unforgettable occasions, every detail deserves a personal touch.',
+        ctaBtn: 'Enquire about your date',
+        viewer: 'Image viewer', close: 'Close image', prev: 'Previous image', next: 'Next image',
+        metaTitle: 'Katya Terski — Makeup & Hair Artist | Novi Sad',
+        metaDesc: 'Editorial makeup and hair artistry by Katya Terski — makeup, bridal, hair styling and editorial beauty in Novi Sad, Serbia.'
+      },
+      sr: {
+        code: 'sr',
+        skip: 'Pređite na sadržaj',
+        navHome: 'Početna', navPortfolio: 'Portfolio', navServices: 'Usluge', navAbout: 'O meni', navContact: 'Kontakt',
+        navBook: 'Termini',
+        navLabel: 'Meni', langLabel: 'Izbor jezika', openMenu: 'Otvorite meni', closeMenu: 'Zatvorite meni',
+        location: 'Novi Sad, Srbija',
+        heroImgAria: 'Katya Terski — editorijalni portret lepote',
+        heroImgA: 'Naslovni portret', heroImgB: 'Zamenite licenciranom fotografijom',
+        heroTag: 'Profesionalna šminka i frizura', artistry: 'Vizažistika i stilizovanje kose',
+        heroLead: 'Profesionalna šminka i stilizovanje kose — za venčanja, editorijale i svaku priliku vrednu pamćenja.',
+        book: 'Zakažite termin',
+        magEdition: 'Izdanje portfolija · 2026',
+        cover1b: 'Šminka i kosa', cover1s: 'Za kameru i za život',
+        cover2b: 'Mladenke i editorijal', cover2s: 'Šminka · Kosa · Lepota',
+        cover3s: 'Venčanja i događaji',
+        explore: 'Pogledajte moj rad', scroll: 'Skrolujte',
+        marquee: ['Šminka', 'Kosa', 'Editorijal', 'Mladenke', 'Lepota'],
+        introA: 'Lepota je umetnost. ', introEm: 'Svaki detalj', introB: ' priča priču.',
+        approach: 'Pristup',
+        introBody1: 'Katya svako lice posmatra kao platno, a svaki izgled kao tihu saradnju. Njen rad se kreće između blistave, prirodne šminke i smelih editorijalnih izjava — uvek vođen svetlom, teksturom i jedinstvenom lepotom osobe u stolici.',
+        introBody2: 'Šminka i kosa osmišljavaju se zajedno, kao jedna celina: ništa se ne dodaje bez razloga, svaki detalj je promišljen.',
+        moreAbout: 'Više o Katji',
+        idxPortfolio: 'Portfolio', workA: 'Izabrani ', workEm: 'radovi',
+        filterLabel: 'Filtriranje portfolija po kategoriji',
+        catAll: 'Sve', catMakeup: 'Šminka', catHair: 'Kosa', catEditorial: 'Editorijal', catBridal: 'Mladenke',
+        orientPortrait: 'Portret', orientLandscape: 'Pejzaž',
+        phImg: 'Rezervisano mesto za sliku',
+        workNote: 'Izbor nedavnih radova — šminka i kosa.',
+        titles: ['Editorijalni sjaj', 'Rumeni sjaj', 'Zlatni talasi', 'Mladenkini talasi', 'Vajani glam', 'Elegantna punđa', 'Holivudski talasi', 'Blistava nude'],
+        idxServices: 'Usluge', craftA: '', craftEm: 'Cenovnik',
+        svcIntro: 'Svaki izgled kreira se prema osobi, prilici i svetlu. Izaberite uslugu da započnete upit.',
+        optDefault: 'Izaberite uslugu',
+        svc: [
+          { key: 'makeup_hair', title: 'Šminkanje i frizura', price: '9.000 RSD · 80 €', desc: 'Kompletna šminka i frizura za vašu priliku, osmišljene zajedno kao jedan promišljen izgled.' },
+          { key: 'makeup', title: 'Šminkanje', price: '4.500 RSD · 40 €', desc: 'Prefinjena šminka prilagođena kameri, vašim crtama lica i svetlu u kom ćete biti viđeni.' },
+          { key: 'hair', title: 'Frizura', price: '4.500 RSD · 40 €', desc: 'Kosa oblikovana da upotpuni izgled i zadrži formu tokom dana.' },
+          { key: 'location', title: 'Izlazak na teren', price: 'Po dogovoru', desc: 'Katya dolazi k vama — Novi Sad, drugi gradovi i lokacije, po dogovoru.' },
+          { key: 'bridal', title: 'Pratnja mlade', price: '2.500 RSD · 20 € / h', desc: 'Tokom dana venčanja — osvežavanje i održavanje šminke i frizure, kao i transformacija izgleda tokom dana.' }
+        ],
+        bookSuffix: ' — započnite upit',
+        svcFine: 'Cene su prikazane u dinarima i evrima. Izlazak na teren se dogovara uz svaku rezervaciju.',
+        idxAbout: 'O meni', aboutA: 'U srcu ', aboutEm: 'umetnosti',
+        aboutIntro: 'Bezvremena lepota, stvorena s preciznošću i pažnjom za najsitniji detalj.',
+        aboutP1: 'Katya Terski je profesionalna vizažistkinja i stilistkinja kose iz Novog Sada, posvećena stvaranju bezvremene lepote kroz umetnost, preciznost i izuzetan osećaj za detalj.',
+        aboutP2: 'Od nenametljivo prefinjene elegancije do smelih editorijalnih izraza, svaki izgled pažljivo je osmišljen da istakne individualnost i proslavi prirodnu lepotu.',
+        aboutP3: 'Za Katju, šminka i stilizovanje kose više su od usluge — one su umetnost, u kojoj svaki detalj doprinosi zaista nezaboravnom utisku.',
+        sig: '— Katja',
+        idxLocation: 'Na lokaciji', locA: 'Lepota, gde god ', locEm: 'da ste.',
+        locBody1: 'Katya dolazi k vama. Za venčanja i događaje izlazi na lokaciju — kod vas, u hotel ili na mesto proslave — da priprema bude mirna i bez žurbe, tačno tamo gde dan počinje.',
+        locBody2: 'Izlazak na teren u Novom Sadu i okolini po dogovoru; udaljenost i termin potvrđuju se uz svaku rezervaciju.',
+        locCap: 'Priprema mlade na lokaciji — Vinarija Zvonko Bogdan.',
+        locVideoAria: 'Video: priprema mlade na lokaciji u Vinariji Zvonko Bogdan',
+        aboutImgAria: 'Portret Katye Terski',
+        aboutImgA: 'Portret umetnice', aboutImgB: 'Zamenite licenciranom fotografijom · 4:5',
+        idxContact: 'Kontakt i rezervacije', contactA: 'Napravimo nešto ', contactEm: 'lepo.',
+        mapAria: 'Otvorite lokaciju studija Katya Terski u Google mapama', studioLabel: 'Studio',
+        studioAddr: 'Bulevar oslobođenja 00 · Novi Sad, Srbija', mapLink: 'Pogledajte na Google mapama',
+        mapNote: 'Ilustrativna lokacija · tačna adresa pri rezervaciji',
+        lead: 'Podelite nekoliko detalja o svojoj prilici ili projektu i željenom datumu. Za najbrži odgovor, pišite Katji direktno na Instagramu.',
+        lName: 'Ime', lEmail: 'Imejl', lService: 'Vrsta usluge', lDate: 'Željeni datum', lMessage: 'Poruka',
+        phName: 'Vaše ime i prezime', phMessage: 'Recite Katji o prilici, izgledu koji zamišljate, lokaciji i terminu…',
+        disc: 'Ova konceptna forma još nije povezana sa imejl servisom. Slanjem se proveravaju vaši podaci i priprema poruka za Instagram.',
+        send: 'Pošaljite upit',
+        vName: 'Unesite svoje ime.', vEmail: 'Unesite svoju imejl adresu.', vEmailBad: 'Unesite ispravnu imejl adresu.', vService: 'Izaberite vrstu usluge.', vDate: 'Izaberite datum u budućnosti.', vMessage: 'Napišite nekoliko reči o svojoj prilici (najmanje 10 karaktera).',
+        sEyebrow: 'Upit je pripremljen', sThankA: 'Hvala, ', sThankB: '.',
+        sP1a: 'Vaši podaci izgledaju potpuno. Ovaj koncept sajt još nije povezan sa imejl servisom, pa vaša poruka ', sNot: 'nije', sP1b: ' poslata.',
+        sP2: 'Da biste odmah stupili u kontakt sa Katjom, pošaljite joj poruku na Instagramu — vaš upit je spreman za kopiranje ispod.',
+        sInsta: 'Pošaljite poruku na Instagramu', sEdit: 'Izmenite upit',
+        sumHi: 'Zdravo Katja, ja sam ', sumMid: '. Želela bih da se raspitam o usluzi: ', sumDate: ', za datum ', sumEnd: '. ', sumDash: ' — ', sumGeneric: 'vaše usluge',
+        artist: 'Vizažistkinja i stilistkinja kose',
+        copyright: '© 2026 Katya Terski. Sva prava zadržana.',
+        conceptNote: 'Nezvanični edukativni koncept portfolija — nije zvanični sajt i nije odobren od strane Katye Terski.',
+        tstIdx: 'Utisci', tstA: 'Lepe ', tstEm: 'reči',
+        tstSub: 'Lepi trenuci, zajednička iskustva.',
+        tstNote: 'Prikazani utisci su primer izgleda — ovde će stajati stvarne reči klijentkinja.',
+        tst: [
+          { stars: '★★★★★', text: 'Katya ima izvanredan osećaj za detalj. Osećala sam se potpuno kao ja — samo blistavije — i sve je savršeno izdržalo od jutra do poslednjeg plesa.', name: 'Mlada', cat: 'Mladenke' },
+          { stars: '★★★★★', text: 'Smirena, precizna i istinski talentovana. Svaki izgled je ispao tačno onako kako smo zamislili za snimanje, a frizura je savršeno držala pod svetlima.', name: 'Klijentkinja — editorijal', cat: 'Editorijal' },
+          { stars: '★★★★★', text: 'Predivno iskustvo od početka do kraja — prirodna, elegantna šminka i frizura u kojima sam bila najbolja verzija sebe.', name: 'Klijentkinja', cat: 'Šminka i frizura' }
+        ],
+        faqIdx: 'Pitanja', faqA: 'Ono što vas možda ', faqEm: 'zanima',
+        faqSub: 'Sve što treba da znate pre svog termina.',
+        faq: [
+          { q: 'Koliko unapred treba da zakažem termin?', a: 'Što ranije — naročito za venčanja i prometne periode. Pošaljite svoj datum i Katya će vam potvrditi dostupnost.' },
+          { q: 'Da li radite šminku i frizuru zajedno?', a: 'Da. Šminka i kosa osmišljavaju se zajedno kao jedan promišljen izgled, a mogu se zakazati i odvojeno.' },
+          { q: 'Da li izlazite na teren za venčanja i posebne prilike?', a: 'Da. Za venčanja i događaje Katya dolazi k vama; izlazak u Novom Sadu i okolini dogovara se uz svaku rezervaciju.' },
+          { q: 'Koliko traje termin šminke i frizure?', a: 'Zavisi od izgleda i prilike. Trajanje se potvrđuje prilikom zakazivanja, da vaš raspored ostane miran i bez žurbe.' },
+          { q: 'Mogu li da zakažem probnu mladenačku šminku?', a: 'Da — proba je divan način da se mladenački izgled unapred isavrši. Pomenite to u upitu i Katya će to dogovoriti s vama.' },
+          { q: 'Kako da se pripremim za termin?', a: 'Po mogućstvu dođite sa čistom i negovanom kožom i čistom, suvom kosom. Katya će podeliti konkretne savete nakon potvrde termina.' },
+          { q: 'Kako da potvrdim rezervaciju?', a: 'Pošaljite upit preko kontakt forme ili poruku Katji na Instagramu — odgovoriće da potvrdi sve detalje s vama.' }
+        ],
+        ctaA: 'Vaš trenutak. ', ctaEm: 'Promišljen do detalja.',
+        ctaText: 'Od intimnih proslava do nezaboravnih prilika, svaki detalj zaslužuje lični pečat.',
+        ctaBtn: 'Pitajte za svoj datum',
+        viewer: 'Pregled slike', close: 'Zatvorite sliku', prev: 'Prethodna slika', next: 'Sledeća slika',
+        metaTitle: 'Katya Terski — Vizažistkinja i stilistkinja kose | Novi Sad',
+        metaDesc: 'Editorijalna šminka i stilizovanje kose — Katya Terski. Šminka, mladenke, frizure i editorijalna lepota u Novom Sadu, Srbija.'
+      },
+      ru: {
+        code: 'ru',
+        skip: 'Перейти к содержимому',
+        navHome: 'Главная', navPortfolio: 'Портфолио', navServices: 'Услуги', navAbout: 'Обо мне', navContact: 'Контакт',
+        navBook: 'Запись',
+        navLabel: 'Меню', langLabel: 'Выбор языка', openMenu: 'Открыть меню', closeMenu: 'Закрыть меню',
+        location: 'Нови-Сад, Сербия',
+        heroImgAria: 'Катя Терски — эдиториал-портрет',
+        heroImgA: 'Главный портрет', heroImgB: 'Замените лицензированной фотографией',
+        heroTag: 'Профессиональный макияж и причёска', artistry: 'Искусство макияжа и причёски',
+        heroLead: 'Профессиональный макияж и причёски — для свадеб, съёмок и каждого особого события.',
+        book: 'Записаться',
+        magEdition: 'Портфолио · 2026',
+        cover1b: 'Макияж и причёска', cover1s: 'Для камеры и жизни',
+        cover2b: 'Свадьбы и эдиториал', cover2s: 'Макияж · Причёска · Красота',
+        cover3s: 'Свадьбы и события',
+        explore: 'Смотреть работы', scroll: 'Листать',
+        marquee: ['Макияж', 'Причёска', 'Эдиториал', 'Невесты', 'Красота'],
+        introA: 'Красота — это искусство. ', introEm: 'Каждая деталь', introB: ' рассказывает историю.',
+        approach: 'Подход',
+        introBody1: 'Катя видит в каждом лице холст, а в каждом образе — тихое сотворчество. Её работы балансируют между сияющим макияжем «второй кожи» и смелыми эдиториал-образами, всегда следуя за светом, фактурой и индивидуальной красотой человека в кресле.',
+        introBody2: 'Макияж и причёска создаются вместе, как единая композиция: ничего лишнего, каждая деталь продумана.',
+        moreAbout: 'Подробнее о Кате',
+        idxPortfolio: 'Портфолио', workA: 'Избранные ', workEm: 'работы',
+        filterLabel: 'Фильтр портфолио по категории',
+        catAll: 'Все', catMakeup: 'Макияж', catHair: 'Причёска', catEditorial: 'Эдиториал', catBridal: 'Невесты',
+        orientPortrait: 'Портрет', orientLandscape: 'Пейзаж',
+        phImg: 'Заполнитель изображения',
+        workNote: 'Подборка недавних работ — макияж и причёска.',
+        titles: ['Эдиториал-сияние', 'Румяное сияние', 'Золотые волны', 'Свадебные волны', 'Скульптурный глэм', 'Гладкий шиньон', 'Голливудские волны', 'Сияющий нюд'],
+        idxServices: 'Услуги', craftA: '', craftEm: 'Цены',
+        svcIntro: 'Каждый образ создаётся под человека, повод и свет. Выберите услугу, чтобы отправить запрос.',
+        optDefault: 'Выберите услугу',
+        svc: [
+          { key: 'makeup_hair', title: 'Макияж и причёска', price: '9 000 RSD · 80 €', desc: 'Полный макияж и причёска для вашего события, созданные вместе как единый продуманный образ.' },
+          { key: 'makeup', title: 'Макияж', price: '4 500 RSD · 40 €', desc: 'Изысканный макияж с учётом камеры, под ваши черты и свет, в котором вас увидят.' },
+          { key: 'hair', title: 'Причёска', price: '4 500 RSD · 40 €', desc: 'Укладка, которая завершает образ и держит форму в течение дня.' },
+          { key: 'location', title: 'Выезд на место', price: 'По договорённости', desc: 'Катя приедет к вам — Нови-Сад, другие города и площадки, по договорённости.' },
+          { key: 'bridal', title: 'Сопровождение невесты', price: '2 500 RSD · 20 € / ч', desc: 'В течение свадебного дня — обновление и поддержание макияжа и причёски, а также смена образа.' }
+        ],
+        bookSuffix: ' — отправить запрос',
+        svcFine: 'Цены указаны в динарах и евро. Выезд согласовывается при каждой записи.',
+        idxAbout: 'Обо мне', aboutA: 'За ', aboutEm: 'мастерством',
+        aboutIntro: 'Вневременная красота, созданная с точностью и вниманием к мельчайшим деталям.',
+        aboutP1: 'Катя Терски — профессиональный визажист и стилист по волосам из Нови-Сада, посвятившая себя созданию вневременной красоты через искусство, точность и исключительное внимание к деталям.',
+        aboutP2: 'От непринуждённо утончённой элегантности до смелых эдиториал-образов — каждый образ продуман так, чтобы подчеркнуть индивидуальность и воспеть естественную красоту.',
+        aboutP3: 'Для Кати макияж и причёска — больше, чем услуга: это искусство, где каждая деталь создаёт по-настоящему незабываемое впечатление.',
+        sig: '— Катя',
+        idxLocation: 'С выездом', locA: 'Красота там, ', locEm: 'где вы.',
+        locBody1: 'Катя приезжает к вам. На свадьбы и мероприятия она выезжает на место — к вам домой, в отель или на площадку, — чтобы сборы проходили спокойно и без спешки, там, где начинается день.',
+        locBody2: 'Выезд по Нови-Саду и окрестностям по договорённости; расстояние и время подтверждаются при каждой записи.',
+        locCap: 'Сборы невесты на месте — винодельня Zvonko Bogdan.',
+        locVideoAria: 'Видео: сборы невесты на месте, винодельня Zvonko Bogdan',
+        aboutImgAria: 'Портрет Кати Терски',
+        aboutImgA: 'Портрет художницы', aboutImgB: 'Замените лицензированной фотографией · 4:5',
+        idxContact: 'Контакт и запись', contactA: 'Давайте создадим что-то ', contactEm: 'прекрасное.',
+        mapAria: 'Открыть локацию студии Katya Terski в Google Картах', studioLabel: 'Студия',
+        studioAddr: 'Bulevar oslobođenja 00 · Нови-Сад, Сербия', mapLink: 'Открыть в Google Картах',
+        mapNote: 'Иллюстративная локация · точный адрес при записи',
+        lead: 'Поделитесь несколькими деталями о вашем событии или проекте и желаемой дате. Быстрее всего — написать Кате напрямую в Instagram.',
+        lName: 'Имя', lEmail: 'Email', lService: 'Тип услуги', lDate: 'Желаемая дата', lMessage: 'Сообщение',
+        phName: 'Ваше имя и фамилия', phMessage: 'Расскажите Кате о событии, образе, который вы представляете, месте и сроках…',
+        disc: 'Эта концептуальная форма пока не подключена к почтовому сервису. При отправке проверяются ваши данные и готовится сообщение для Instagram.',
+        send: 'Отправить запрос',
+        vName: 'Пожалуйста, введите имя.', vEmail: 'Пожалуйста, введите email.', vEmailBad: 'Введите корректный email.', vService: 'Выберите тип услуги.', vDate: 'Выберите дату в будущем.', vMessage: 'Напишите несколько слов о вашем событии (минимум 10 символов).',
+        sEyebrow: 'Запрос подготовлен', sThankA: 'Спасибо, ', sThankB: '.',
+        sP1a: 'Ваши данные заполнены. Этот концепт-сайт пока не подключён к почтовому сервису, поэтому ваше сообщение ', sNot: 'не', sP1b: ' отправлено.',
+        sP2: 'Чтобы связаться с Катей сейчас, напишите ей в Instagram — ваш запрос готов к копированию ниже.',
+        sInsta: 'Написать в Instagram', sEdit: 'Изменить запрос',
+        sumHi: 'Здравствуйте, Катя! Меня зовут ', sumMid: '. Хотела бы узнать об услуге: ', sumDate: ', на дату ', sumEnd: '. ', sumDash: ' — ', sumGeneric: 'ваши услуги',
+        artist: 'Визажист и стилист по волосам',
+        copyright: '© 2026 Katya Terski. Все права защищены.',
+        conceptNote: 'Неофициальная учебная концепция портфолио — не является официальным сайтом и не одобрена Катей Терски.',
+        tstIdx: 'Отзывы', tstA: 'Тёплые ', tstEm: 'слова',
+        tstSub: 'Прекрасные моменты, общие впечатления.',
+        tstNote: 'Показаны примерные отзывы для макета — здесь появятся настоящие слова клиенток.',
+        tst: [
+          { stars: '★★★★★', text: 'У Кати исключительное чувство детали. Я чувствовала себя собой — только сияющей, — и всё безупречно держалось с утра и до последнего танца.', name: 'Невеста', cat: 'Невесты' },
+          { stars: '★★★★★', text: 'Спокойно, точно и по-настоящему талантливо. Каждый образ получился именно таким, как мы задумали для съёмки, а причёска идеально держалась под светом.', name: 'Клиентка — эдиториал', cat: 'Эдиториал' },
+          { stars: '★★★★★', text: 'Прекрасный опыт от начала до конца — естественный, элегантный макияж и причёска, в которых я была лучшей версией себя.', name: 'Клиентка', cat: 'Макияж и причёска' }
+        ],
+        faqIdx: 'Вопросы', faqA: 'То, что вы, возможно, ', faqEm: 'спросите',
+        faqSub: 'Всё, что нужно знать перед визитом.',
+        faq: [
+          { q: 'За сколько времени стоит записываться?', a: 'Как можно раньше — особенно на свадьбы и в загруженные сезоны. Напишите вашу дату, и Катя подтвердит доступность.' },
+          { q: 'Делаете ли вы макияж и причёску вместе?', a: 'Да. Макияж и причёска создаются вместе как единый продуманный образ, а также доступны по отдельности.' },
+          { q: 'Выезжаете ли вы к клиентам на свадьбы и особые события?', a: 'Да. На свадьбы и мероприятия Катя приезжает к вам; выезд по Нови-Саду и окрестностям согласовывается при каждой записи.' },
+          { q: 'Сколько длится сеанс макияжа и причёски?', a: 'Это зависит от образа и повода. Время подтверждается при записи, чтобы ваш день проходил спокойно и без спешки.' },
+          { q: 'Можно ли записаться на свадебную пробу?', a: 'Да — проба это прекрасный способ заранее довести свадебный образ до совершенства. Укажите это в запросе, и Катя всё организует.' },
+          { q: 'Как подготовиться к визиту?', a: 'По возможности приходите с чистой, увлажнённой кожей и чистыми сухими волосами. Катя поделится конкретными рекомендациями после подтверждения записи.' },
+          { q: 'Как подтвердить запись?', a: 'Отправьте запрос через форму или напишите Кате в Instagram — она ответит и подтвердит все детали.' }
+        ],
+        ctaA: 'Ваш момент. ', ctaEm: 'Продуман до мелочей.',
+        ctaText: 'От камерных торжеств до незабываемых событий — каждая деталь заслуживает личного подхода.',
+        ctaBtn: 'Узнать о вашей дате',
+        viewer: 'Просмотр изображения', close: 'Закрыть изображение', prev: 'Предыдущее изображение', next: 'Следующее изображение',
+        metaTitle: 'Katya Terski — визажист и стилист по волосам | Нови-Сад',
+        metaDesc: 'Эдиториал-макияж и причёски от Кати Терски — макияж, свадебный образ, укладка и эдиториал-бьюти в Нови-Саде, Сербия.'
+      }
+    };
+var ASSETS = {
+  hero:'assets/hero.jpg', about:'assets/about.jpg', video:'assets/location.mp4',
+  work:['assets/work-1.jpg','assets/work-2.jpg','assets/work-3.jpg','assets/work-4.jpg','assets/work-5.jpg','assets/work-6.jpg','assets/work-7.jpg','assets/work-8.jpg']
+};
+var BASECATS = ['Editorial','Makeup','Hair','Bridal','Editorial','Hair','Bridal','Makeup'];
+
+var ARR  = '<svg width="30" height="10" viewBox="0 0 34 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 5h32M28 1l4 4-4 4"></path></svg>';
+var LARR = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M17 9H2M7 4L2 9l5 5"></path></svg>';
+var RARR = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M1 9h15M11 4l5 5-5 5"></path></svg>';
+var PLUS = '<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M8 1v14M1 8h14"></path></svg>';
+var ARUP = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M1 9h15M11 4l5 5-5 5"></path></svg>';
+var IG   = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="1" y="1" width="16" height="16" rx="4.5"></rect><circle cx="9" cy="9" r="3.8"></circle><circle cx="13.4" cy="4.6" r=".6" fill="currentColor"></circle></svg>';
+var CHEV = '<svg class="chev" width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M1 1l5 5 5-5"></path></svg>';
+var XBIG = '<svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 2l18 18M20 2L2 20"></path></svg>';
+var XSM  = '<svg width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 2l18 18M20 2L2 20"></path></svg>';
+var IGLINK = 'https://www.instagram.com/katya_terski/';
+
+var lang='en';
+try{var sv=localStorage.getItem('kt_lang');if(sv==='en'||sv==='sr'||sv==='ru')lang=sv;}catch(e){}
+var state={lang:lang,menu:false,scrolled:false,filter:'All',cf:0,lb:null,faq:null,tst:0,form:{name:'',email:'',service:'',date:'',message:''},errors:{},sent:false};
+var _start=null,_moved=false;
+
+function t(){return DICT[state.lang];}
+function pad(n){return (n<10?'0':'')+n;}
+function esc(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function catLabel(key){var d=t();var m={All:d.catAll,Makeup:d.catMakeup,Hair:d.catHair,Editorial:d.catEditorial,Bridal:d.catBridal};return m[key]||key;}
+function filtered(){var d=t();var o=[];for(var i=0;i<8;i++){var c=BASECATS[i];if(state.filter==='All'||c===state.filter){o.push({src:ASSETS.work[i],cat:c,catLabel:catLabel(c),title:d.titles[i],idx:i});}}return o;}
+function today(){var x=new Date();return x.getFullYear()+'-'+pad(x.getMonth()+1)+'-'+pad(x.getDate());}
+function serviceLabel(key){var l=t().svc;for(var i=0;i<l.length;i++){if(l[i].key===key)return l[i].title;}return '';}
+function validate(){var d=t();var f=state.form;var e={};
+  if(!f.name.trim())e.name=d.vName;
+  if(!f.email.trim())e.email=d.vEmail;else if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.trim()))e.email=d.vEmailBad;
+  if(!f.service)e.service=d.vService;
+  if(f.date){var td=new Date();td.setHours(0,0,0,0);if(new Date(f.date+'T00:00:00')<td)e.date=d.vDate;}
+  if(f.message.trim().length<10)e.message=d.vMessage;
+  return e;}
+function buildSummary(){var d=t();var f=state.form;var sv=f.service?serviceLabel(f.service):d.sumGeneric;var dc=f.date?(d.sumDate+f.date):'';return d.sumHi+f.name.trim()+d.sumMid+sv+dc+d.sumEnd+f.message.trim()+d.sumDash+f.email.trim();}
+
+function langBtns(){var a=[['en','EN','English'],['sr','SR','Srpski'],['ru','RU','Русский']];
+  return a.map(function(c){var on=state.lang===c[0];return '<button type="button" class="'+(on?'on':'')+'" lang="'+c[0]+'" aria-label="'+c[2]+'" aria-pressed="'+on+'" onclick="KT.lang(\''+c[0]+'\')"><span>'+c[1]+'</span></button>';}).join('');}
+
+function headerHTML(){var d=t();return ''+
+'<a href="#home" style="position:absolute;left:-9999px;top:8px;z-index:90;background:#171717;color:#F7F5F0;padding:12px 18px">'+d.skip+'</a>'+
+'<header class="'+(state.scrolled?'nav solid':'nav')+'" id="site-header"><div class="wrap in">'+
+'<a class="brand" href="#home" aria-label="Katya Terski — home">KATYA TERSKI</a>'+
+'<div class="right"><nav aria-label="Primary"><ul class="links">'+
+'<li><a href="#home">'+d.navHome+'</a></li><li><a href="#portfolio">'+d.navPortfolio+'</a></li>'+
+'<li><a href="#services">'+d.navServices+'</a></li><li><a href="#about">'+d.navAbout+'</a></li>'+
+'<li><a href="#contact">'+d.navContact+'</a></li></ul></nav>'+
+'<div class="lang" role="group" aria-label="'+d.langLabel+'">'+langBtns()+'</div>'+
+'<button class="burger" type="button" aria-label="'+d.openMenu+'" onclick="KT.openMenu()"><i></i><i></i></button>'+
+'</div></div></header>';}
+
+function menuHTML(){var d=t();return ''+
+'<div class="menu" role="dialog" aria-modal="true" aria-label="'+d.navLabel+'">'+
+'<div class="top"><span class="brand" style="font-size:16px">KATYA TERSKI</span>'+
+'<button class="close" type="button" aria-label="'+d.closeMenu+'" onclick="KT.closeMenu()">'+XBIG+'</button></div>'+
+'<nav aria-label="'+d.navLabel+'">'+
+'<a href="#home" onclick="KT.closeMenu()"><span class="mnum">01</span><span class="mlabel">'+d.navHome+'</span></a>'+
+'<a href="#portfolio" onclick="KT.closeMenu()"><span class="mnum">02</span><span class="mlabel">'+d.navPortfolio+'</span></a>'+
+'<a href="#services" onclick="KT.closeMenu()"><span class="mnum">03</span><span class="mlabel">'+d.navServices+'</span></a>'+
+'<a href="#about" onclick="KT.closeMenu()"><span class="mnum">04</span><span class="mlabel">'+d.navAbout+'</span></a>'+
+'<a href="#contact" onclick="KT.closeMenu()"><span class="mnum">05</span><span class="mlabel">'+d.navContact+'</span></a>'+
+'</nav><div class="lang mlang" role="group" aria-label="'+d.langLabel+'">'+langBtns()+'</div>'+
+'<a href="'+IGLINK+'" target="_blank" rel="noopener noreferrer" style="color:#B9A99A;font-size:12px;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;padding:12px 0;margin-top:8px">Instagram — @katya_terski</a>'+
+'</div>';}
+
+function heroHTML(){var d=t();return ''+
+'<section class="hero" id="home" aria-label="'+d.navHome+'"><div class="portrait"><div class="ph"><img src="'+ASSETS.hero+'" alt="'+d.heroImgAria+'"></div></div>'+
+'<div class="wrap cover"><div class="inner"><h1 class="mast-cover"><span>KATYA TERSKI</span></h1>'+
+'<div class="cover-bottom"><p class="tagline" style="color:#e7e0d4">'+d.heroTag+'</p>'+
+'<div class="cover-cta"><a class="hbtn" href="#contact"><span>'+d.book+'</span> '+ARR+'</a>'+
+'<a class="cta" href="#portfolio">'+d.explore+' '+ARR+'</a></div></div></div></div></section>';}
+
+function marqueeHTML(){var d=t();var w=d.marquee.concat(d.marquee,d.marquee,d.marquee);
+  return '<div class="marq" aria-hidden="true"><div class="tr">'+w.map(function(x){return '<span class="w">'+x+'</span><span class="dot"></span>';}).join('')+'</div></div>';}
+
+function introHTML(){var d=t();return ''+
+'<section class="intro" id="intro" aria-labelledby="intro-h"><div class="wrap g">'+
+'<h2 id="intro-h" class="rv">'+d.introA+'<em>'+d.introEm+'</em>'+d.introB+'</h2>'+
+'<div class="body rv"><p>'+d.introBody1+'</p><p>'+d.introBody2+'</p>'+
+'<a class="cta dark" href="#about" style="margin-top:18px">'+d.moreAbout+' '+ARR+'</a></div></div></section>';}
+
+function cardsHTML(){var shown=filtered();var n=shown.length;var cur=n?(((state.cf%n)+n)%n):0;
+  return shown.map(function(it,i){var dd=i-cur;if(n>1){if(dd>n/2)dd-=n;if(dd<-n/2)dd+=n;}
+    var pos=dd===0?'c':dd===-1?'l1':dd===1?'r1':dd===-2?'l2':dd===2?'r2':'hid';
+    return '<button type="button" class="cf-card '+pos+'" data-i="'+i+'" aria-label="'+esc(it.title+', '+it.catLabel)+'" aria-hidden="'+(pos==='hid')+'" tabindex="'+(pos==='hid'?-1:0)+'" onclick="KT.card('+i+')">'+
+    '<span class="cf-img"><img src="'+it.src+'" alt="'+esc(it.title+' — '+it.catLabel)+'" draggable="false"></span>'+
+    '<span class="cf-view">'+PLUS+'</span></button>';}).join('');}
+
+function filtersHTML(){var d=t();var cats=['All','Makeup','Hair','Editorial','Bridal'];
+  return cats.map(function(c){var cnt=c==='All'?8:BASECATS.filter(function(x){return x===c;}).length;var on=state.filter===c;
+    return '<button type="button" class="'+(on?'flt on':'flt')+'" aria-pressed="'+on+'" onclick="KT.filter(\''+c+'\')">'+catLabel(c)+'<sup>'+cnt+'</sup></button>';}).join('');}
+
+function workHTML(){var d=t();var shown=filtered();var n=shown.length;var cur=n?(((state.cf%n)+n)%n):0;var cu=shown[cur]||{title:'',catLabel:''};
+  return ''+
+'<section class="work" id="portfolio" aria-labelledby="work-h"><div class="wrap">'+
+'<div class="shead"><div><div class="idx eyebrow rv"><b>02</b><span>—</span><span>'+d.idxPortfolio+'</span></div>'+
+'<h2 id="work-h" class="rv">'+d.workA+'<em>'+d.workEm+'</em></h2></div>'+
+'<div role="group" aria-label="'+d.filterLabel+'" class="filters rv" id="filters">'+filtersHTML()+'</div></div>'+
+'<div class="cf-stage rv" id="cfStage"><div class="cf-track" id="cfTrack">'+cardsHTML()+'</div></div>'+
+'<div class="cf-meta rv"><h3 class="cf-title" id="cfTitle">'+cu.title+'</h3><span class="cf-cat eyebrow" id="cfCat">'+cu.catLabel+'</span></div>'+
+'<div class="cf-ctrls rv"><button type="button" class="cf-arrow" aria-label="'+d.prev+'" onclick="KT.cfPrev()">'+LARR+'</button>'+
+'<span class="cf-count" id="cfCount">'+pad(cur+1)+' / '+pad(n)+'</span>'+
+'<button type="button" class="cf-arrow" aria-label="'+d.next+'" onclick="KT.cfNext()">'+RARR+'</button></div>'+
+'<p class="note" style="text-align:center;margin-top:30px">'+d.workNote+'</p></div></section>';}
+
+function servicesHTML(){var d=t();var rows=d.svc.map(function(sv,i){
+  return '<a class="srow rv" href="#contact" onclick="KT.book(\''+sv.key+'\')" aria-label="'+esc(sv.title+d.bookSuffix)+'">'+
+  '<span class="n">0'+(i+1)+'</span><h3>'+sv.title+'</h3><p>'+sv.desc+'</p><span class="price">'+sv.price+'</span>'+
+  '<span class="ar">'+ARUP+'</span></a>';}).join('');
+  return '<section class="svc" id="services" aria-labelledby="svc-h"><div class="wrap">'+
+  '<div class="shead"><div><div class="idx eyebrow rv"><b>03</b><span>—</span><span>'+d.idxServices+'</span></div>'+
+  '<h2 id="svc-h" class="rv">'+d.craftA+'<em>'+d.craftEm+'</em></h2></div>'+
+  '<p class="rv" style="max-width:360px;margin:0;font-size:15px;line-height:1.8;font-weight:300;color:#CFC6BA">'+d.svcIntro+'</p></div>'+
+  '<div>'+rows+'</div><p class="fine">'+d.svcFine+'</p></div></section>';}
+
+function aboutHTML(){var d=t();return ''+
+'<section class="about" id="about" aria-labelledby="about-h"><div class="wrap about-grid">'+
+'<div class="about-head rv"><div class="idx eyebrow"><b>04</b><span>—</span><span>'+d.idxAbout+'</span></div>'+
+'<h2 id="about-h">'+d.aboutA+'<em>'+d.aboutEm+'</em></h2><p class="about-intro">'+d.aboutIntro+'</p></div>'+
+'<div class="about-pic rvi"><img src="'+ASSETS.about+'" alt="'+d.aboutImgAria+'"></div>'+
+'<div class="about-bio rv"><p>'+d.aboutP1+'</p><p>'+d.aboutP2+'</p><p>'+d.aboutP3+'</p>'+
+'<a class="ig" href="'+IGLINK+'" target="_blank" rel="noopener noreferrer" style="margin-top:8px">'+IG+'@katya_terski</a>'+
+'<span class="sig">'+d.sig+'</span></div></div></section>';}
+
+function locationHTML(){var d=t();return ''+
+'<section class="loc" id="location" aria-labelledby="loc-h"><div class="wrap g">'+
+'<div><div class="idx eyebrow rv"><b>05</b><span>—</span><span>'+d.idxLocation+'</span></div>'+
+'<h2 id="loc-h" class="rv">'+d.locA+'<em>'+d.locEm+'</em></h2><p class="rv">'+d.locBody1+'</p><p class="rv">'+d.locBody2+'</p>'+
+'<a class="cta rv" href="#contact" style="margin-top:16px">'+d.book+' '+ARR+'</a></div>'+
+'<div><div class="vwrap rv"><video src="'+ASSETS.video+'" autoplay muted loop playsinline controls preload="metadata" aria-label="'+d.locVideoAria+'"></video></div>'+
+'<p class="cap rv" style="text-align:center;max-width:400px;margin:14px auto 0">'+d.locCap+'</p></div></div></section>';}
+
+function tstInner(){var d=t();var it=d.tst;var tn=it.length;var ti=((state.tst%tn)+tn)%tn;var c=it[ti];
+  return '<span class="tquote">“</span>'+
+  '<div class="tst-card"><div class="tst-stars">'+c.stars+'</div><p class="tst-text">'+c.text+'</p>'+
+  '<div class="tst-name">'+c.name+'</div><div class="tst-cat">'+c.cat+'</div></div>'+
+  '<div class="tst-ctrls"><button type="button" class="tarrow" aria-label="'+d.prev+'" onclick="KT.tstPrev()">'+LARR+'</button>'+
+  '<span class="tst-count">'+pad(ti+1)+' / '+pad(tn)+'</span>'+
+  '<button type="button" class="tarrow" aria-label="'+d.next+'" onclick="KT.tstNext()">'+RARR+'</button></div>'+
+  '<p class="tst-note">'+d.tstNote+'</p>';}
+
+function tstHTML(){var d=t();return ''+
+'<section class="tst" id="testimonials" aria-labelledby="tst-h"><div class="wrap">'+
+'<div class="shead"><div><div class="idx eyebrow rv"><b>06</b><span>—</span><span>'+d.tstIdx+'</span></div>'+
+'<h2 id="tst-h" class="rv">'+d.tstA+'<em>'+d.tstEm+'</em></h2></div><p class="tst-sub rv">'+d.tstSub+'</p></div>'+
+'<div class="tst-stage rv" id="tstStage">'+tstInner()+'</div></div></section>';}
+
+function faqItems(){var d=t();return d.faq.map(function(f,i){var open=state.faq===i;
+  return '<div class="faq-item'+(open?' open':'')+'"><button type="button" class="faq-q" aria-expanded="'+open+'" onclick="KT.faq('+i+')"><span>'+f.q+'</span><span class="faq-ic"></span></button>'+(open?'<div class="faq-a"><p>'+f.a+'</p></div>':'')+'</div>';}).join('');}
+
+function faqHTML(){var d=t();return ''+
+'<section class="faq" id="faq" aria-labelledby="faq-h"><div class="wrap">'+
+'<div class="shead"><div><div class="idx eyebrow rv"><b>07</b><span>—</span><span>'+d.faqIdx+'</span></div>'+
+'<h2 id="faq-h" class="rv">'+d.faqA+'<em>'+d.faqEm+'</em></h2></div><p class="faq-sub rv">'+d.faqSub+'</p></div>'+
+'<div class="faq-list rv" id="faqList">'+faqItems()+'</div></div></section>';}
+
+function ctaHTML(){var d=t();return ''+
+'<section class="cta-band" aria-labelledby="cta-h"><div class="wrap in">'+
+'<h2 id="cta-h" class="rv">'+d.ctaA+'<em>'+d.ctaEm+'</em></h2><p class="rv">'+d.ctaText+'</p>'+
+'<a class="hbtn rv" href="#contact"><span>'+d.ctaBtn+'</span> '+ARR+'</a></div></section>';}
+
+function fld(k,type,label,ph){var s=state;var cls=(k==='message'?'fld full':'fld half')+(s.errors[k]?' err':'');
+  var err=s.errors[k]?'<span class="msg" id="e-'+k+'">'+s.errors[k]+'</span>':'';
+  var attr=k==='email'?'inputmode="email" autocomplete="email"':'autocomplete="name"';
+  return '<div class="'+cls+'"><label for="f-'+k+'">'+label+'</label>'+
+  '<input id="f-'+k+'" type="'+type+'" '+attr+' placeholder="'+esc(ph)+'" value="'+esc(s.form[k])+'" oninput="KT.field(\''+k+'\',this.value)" aria-invalid="'+(s.errors[k]?'true':'false')+'" aria-describedby="e-'+k+'">'+err+'</div>';}
+
+function contactCol2(){var d=t();var s=state;
+  if(s.sent){var sum=buildSummary();var fn=(s.form.name.trim().split(' ')[0])||'';var thank=d.sThankA+(fn||(s.lang==='en'?'there':''))+d.sThankB;
+    return '<div class="done" role="status" aria-live="polite"><span class="eyebrow" style="color:#5B544D">'+d.sEyebrow+'</span>'+
+    '<h3 style="margin-top:18px">'+esc(thank)+'</h3>'+
+    '<p>'+d.sP1a+'<strong style="font-weight:600">'+d.sNot+'</strong>'+d.sP1b+'</p><p>'+d.sP2+'</p>'+
+    '<p class="quote">“'+esc(sum)+'”</p>'+
+    '<div class="row"><a class="btn" href="'+IGLINK+'" target="_blank" rel="noopener noreferrer"><span>'+d.sInsta+'</span> '+ARR+'</a>'+
+    '<button type="button" class="btn ghost" onclick="KT.reset()"><span>'+d.sEdit+'</span></button></div></div>';}
+  var svcopts=d.svc.map(function(o){return '<option value="'+o.key+'" '+(s.form.service===o.key?'selected':'')+'>'+o.title+'</option>';}).join('');
+  var scls='fld half'+(s.errors.service?' err':'');var serr=s.errors.service?'<span class="msg" id="e-service">'+s.errors.service+'</span>':'';
+  var dcls='fld half'+(s.errors.date?' err':'');var derr=s.errors.date?'<span class="msg" id="e-date">'+s.errors.date+'</span>':'';
+  var mcls='fld full'+(s.errors.message?' err':'');var merr=s.errors.message?'<span class="msg" id="e-message">'+s.errors.message+'</span>':'';
+  return '<form class="form rv" onsubmit="KT.submit(event)" aria-label="'+d.idxContact+'">'+
+  fld('name','text',d.lName,d.phName)+
+  fld('email','text',d.lEmail,'name@example.com')+
+  '<div class="'+scls+'"><label for="f-service">'+d.lService+'</label>'+
+  '<select id="f-service" onchange="KT.field(\'service\',this.value)" aria-invalid="'+(s.errors.service?'true':'false')+'" aria-describedby="e-service">'+
+  '<option value="" '+(!s.form.service?'selected':'')+'>'+d.optDefault+'</option>'+svcopts+'</select>'+CHEV+serr+'</div>'+
+  '<div class="'+dcls+'"><label for="f-date">'+d.lDate+'</label>'+
+  '<input id="f-date" type="date" value="'+esc(s.form.date)+'" min="'+today()+'" onchange="KT.field(\'date\',this.value)" aria-invalid="'+(s.errors.date?'true':'false')+'" aria-describedby="e-date">'+derr+'</div>'+
+  '<div class="'+mcls+'"><label for="f-message">'+d.lMessage+'</label>'+
+  '<textarea id="f-message" rows="4" placeholder="'+esc(d.phMessage)+'" oninput="KT.field(\'message\',this.value)" aria-invalid="'+(s.errors.message?'true':'false')+'" aria-describedby="e-message">'+esc(s.form.message)+'</textarea>'+merr+'</div>'+
+  '<div class="send"><p class="disc">'+d.disc+'</p>'+
+  '<button type="submit" class="btn"><span>'+d.send+'</span> '+ARR+'</button></div></form>';}
+
+function contactHTML(){var d=t();return ''+
+'<section class="contact" id="contact" aria-labelledby="contact-h"><div class="wrap g">'+
+'<div><div class="idx eyebrow rv"><b>08</b><span>—</span><span>'+d.idxContact+'</span></div>'+
+'<h2 id="contact-h" class="rv">'+d.contactA+'<em>'+d.contactEm+'</em></h2><p class="lead rv">'+d.lead+'</p>'+
+'<div class="clinks rv"><a class="ig" href="'+IGLINK+'" target="_blank" rel="noopener noreferrer">'+IG+'@katya_terski '+ARR+'</a>'+
+'<a class="cta dark" href="#contact">'+d.book+' '+ARR+'</a></div></div>'+
+'<div id="contactCol2">'+contactCol2()+'</div></div></section>';}
+
+function footerHTML(){var d=t();return ''+
+'<footer class="foot"><div class="wrap"><p class="big">KATYA TERSKI</p>'+
+'<div class="row"><div><p class="eyebrow" style="margin:0 0 18px;color:#B9A99A">'+d.artist+' — '+d.location+'</p>'+
+'<ul aria-label="'+d.navLabel+'"><li><a href="#home">'+d.navHome+'</a></li><li><a href="#portfolio">'+d.navPortfolio+'</a></li>'+
+'<li><a href="#services">'+d.navServices+'</a></li><li><a href="#about">'+d.navAbout+'</a></li><li><a href="#contact">'+d.navContact+'</a></li></ul></div>'+
+'<a class="ig" href="'+IGLINK+'" target="_blank" rel="noopener noreferrer">'+IG+'@katya_terski</a></div>'+
+'<div class="small"><span>'+d.copyright+'</span><span>'+d.conceptNote+'</span></div></div></footer>';}
+
+function lightboxHTML(){var d=t();var shown=filtered();var n=shown.length;if(!n)return '';var i=((state.lb%n)+n)%n;var it=shown[i];
+  return '<div class="lb" role="dialog" aria-modal="true" aria-label="'+d.viewer+'">'+
+  '<div class="bar"><span class="eyebrow" style="color:#B9A99A">'+pad(i+1)+' / '+pad(n)+'</span>'+
+  '<button type="button" class="ib" aria-label="'+d.close+'" onclick="KT.closeLb()">'+XSM+'</button></div>'+
+  '<div class="stage"><button type="button" class="ib side" aria-label="'+d.prev+'" onclick="KT.prevLb()">'+LARR+'</button>'+
+  '<div class="pic"><img src="'+it.src+'" alt="'+esc(it.title+' — '+it.catLabel)+'"></div>'+
+  '<button type="button" class="ib side" aria-label="'+d.next+'" onclick="KT.nextLb()">'+RARR+'</button></div>'+
+  '<div class="info"><h3>'+it.title+'</h3><span class="eyebrow" style="color:#B9A99A">'+it.catLabel+'</span></div>'+
+  '<div class="mnav"><button type="button" class="ib" aria-label="'+d.prev+'" onclick="KT.prevLb()">'+LARR+'</button>'+
+  '<button type="button" class="ib" aria-label="'+d.next+'" onclick="KT.nextLb()">'+RARR+'</button></div></div>';}
+
+function applyMeta(){var d=t();try{document.title=d.metaTitle;document.documentElement.setAttribute('lang',state.lang);var m=document.querySelector('meta[name="description"]');if(m)m.setAttribute('content',d.metaDesc);var a=document.getElementById('app');if(a)a.setAttribute('lang',state.lang);}catch(e){}}
+
+function mount(){
+  var h=headerHTML()+'<div id="menuRoot"></div>'+
+  '<main id="main">'+heroHTML()+marqueeHTML()+introHTML()+workHTML()+servicesHTML()+aboutHTML()+locationHTML()+tstHTML()+faqHTML()+ctaHTML()+contactHTML()+'</main>'+
+  footerHTML()+'<div id="lbRoot"></div>';
+  document.getElementById('app').innerHTML=h;
+  if(state.menu)document.getElementById('menuRoot').innerHTML=menuHTML();
+  if(state.lb!=null)document.getElementById('lbRoot').innerHTML=lightboxHTML();
+  applyMeta();
+}
+function updateCarousel(){var cards=document.querySelectorAll('#cfTrack .cf-card');var n=cards.length;var cur=state.cf;
+  for(var k=0;k<cards.length;k++){var i=parseInt(cards[k].getAttribute('data-i'),10);var dd=i-cur;if(n>1){if(dd>n/2)dd-=n;if(dd<-n/2)dd+=n;}
+    var pos=dd===0?'c':dd===-1?'l1':dd===1?'r1':dd===-2?'l2':dd===2?'r2':'hid';
+    cards[k].className='cf-card '+pos;cards[k].setAttribute('aria-hidden',pos==='hid');cards[k].tabIndex=pos==='hid'?-1:0;}
+  var shown=filtered();var it=shown[cur]||{title:'',catLabel:''};
+  var a=document.getElementById('cfTitle');if(a)a.textContent=it.title;
+  var b=document.getElementById('cfCat');if(b)b.textContent=it.catLabel;
+  var c=document.getElementById('cfCount');if(c)c.textContent=pad(cur+1)+' / '+pad(n);}
+function cfNav(dir){var n=filtered().length||1;state.cf=(((state.cf+dir)%n)+n)%n;updateCarousel();}
+
+var KT={
+  lang:function(k){try{localStorage.setItem('kt_lang',k);}catch(e){}state.lang=k;mount();},
+  openMenu:function(){state.menu=true;document.getElementById('menuRoot').innerHTML=menuHTML();},
+  closeMenu:function(){state.menu=false;document.getElementById('menuRoot').innerHTML='';},
+  filter:function(c){state.filter=c;state.cf=0;var btns=document.querySelectorAll('#filters .flt');var cats=['All','Makeup','Hair','Editorial','Bridal'];for(var k=0;k<btns.length;k++){var on=cats[k]===c;btns[k].className=on?'flt on':'flt';btns[k].setAttribute('aria-pressed',on);}var tr=document.getElementById('cfTrack');if(tr)tr.innerHTML=cardsHTML();updateCarousel();},
+  card:function(i){if(_moved)return;if(i===state.cf){state.lb=i;document.getElementById('lbRoot').innerHTML=lightboxHTML();}else{state.cf=i;updateCarousel();}},
+  cfPrev:function(){cfNav(-1);},cfNext:function(){cfNav(1);},
+  closeLb:function(){state.lb=null;document.getElementById('lbRoot').innerHTML='';},
+  prevLb:function(){var n=filtered().length;state.lb=(((state.lb-1)%n)+n)%n;document.getElementById('lbRoot').innerHTML=lightboxHTML();},
+  nextLb:function(){var n=filtered().length;state.lb=(((state.lb+1)%n)+n)%n;document.getElementById('lbRoot').innerHTML=lightboxHTML();},
+  faq:function(i){state.faq=state.faq===i?null:i;document.getElementById('faqList').innerHTML=faqItems();},
+  tstPrev:function(){state.tst=state.tst-1;document.getElementById('tstStage').innerHTML=tstInner();},
+  tstNext:function(){state.tst=state.tst+1;document.getElementById('tstStage').innerHTML=tstInner();},
+  book:function(key){state.form.service=key;state.errors.service=null;state.sent=false;var el=document.getElementById('f-service');if(el)el.value=key;var w=document.querySelector('#f-service');if(w&&w.closest){var fw=w.closest('.fld');if(fw)fw.className='fld half';}},
+  field:function(k,v){state.form[k]=v;state.errors[k]=null;},
+  submit:function(e){e.preventDefault();var errs=validate();if(Object.keys(errs).length){state.errors=errs;}else{state.errors={};state.sent=true;}document.getElementById('contactCol2').innerHTML=contactCol2();if(state.sent){try{document.getElementById('contact').scrollIntoView({behavior:'smooth',block:'start'});}catch(x){}}},
+  reset:function(){state.sent=false;document.getElementById('contactCol2').innerHTML=contactCol2();}
+};
+window.KT=KT;
+
+function onScroll(){try{var y=window.scrollY||document.documentElement.scrollTop||0;var sc=y>48;if(sc!==state.scrolled){state.scrolled=sc;var h=document.getElementById('site-header');if(h)h.className=sc?'nav solid':'nav';}}catch(e){}}
+function down(e){var tg=e.target;var inStage=false;try{inStage=!!(tg&&tg.closest&&tg.closest('.cf-stage'));}catch(x){}if(!inStage){_start=null;return;}_start=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX;_moved=false;}
+function move(e){if(_start==null)return;var x=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX;if(Math.abs(x-_start)>10)_moved=true;}
+function up(e){if(_start==null)return;var x=(e.changedTouches&&e.changedTouches[0])?e.changedTouches[0].clientX:e.clientX;var dx=x-_start;_start=null;if(Math.abs(dx)>46){if(dx<0)cfNav(1);else cfNav(-1);}setTimeout(function(){_moved=false;},70);}
+function onKey(e){if(state.lb==null)return;if(e.key==='Escape')KT.closeLb();else if(e.key==='ArrowLeft')KT.prevLb();else if(e.key==='ArrowRight')KT.nextLb();}
+
+document.addEventListener('DOMContentLoaded',function(){
+  mount();onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  document.addEventListener('mousedown',down);document.addEventListener('mousemove',move);document.addEventListener('mouseup',up);
+  document.addEventListener('touchstart',down,{passive:true});document.addEventListener('touchmove',move,{passive:true});document.addEventListener('touchend',up);
+  document.addEventListener('keydown',onKey);
+});
+})();
+
+</script>
+</body>
+</html>
